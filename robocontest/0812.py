@@ -1,0 +1,1 @@
+print(1 if input()[0]=='A' else 0)

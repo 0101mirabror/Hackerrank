@@ -1,0 +1,1 @@
+# def quad(x, y):

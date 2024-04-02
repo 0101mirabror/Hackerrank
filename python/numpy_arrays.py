@@ -5,11 +5,10 @@ a = numpy.array([1,2,3,4,5])
 
 b = numpy.array([1,2,3,4,5],float)
 # print(b)  
-def arrays(arr):
-    m = list(map(int, arr))
-    m.reverse()
-    return numpy.array(m, float)
-    pass
+def arrays(arr: list):
+    arr.reverse()
+    return  numpy.array(arr, float)
+   
     # complete this function
     # use numpy.array
 
