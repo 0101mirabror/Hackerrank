@@ -1,4 +1,5 @@
-alp = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n"]
+alp = ["", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n",
+       "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
 def print_str(size):
     n = size - 1
@@ -9,14 +10,15 @@ def print_str(size):
             s += "-"
         print(s[::-1])
 
-
-def print_rangoli(size):
-    n = size - 1
-    k = 2*n
-    for i in range(size):
-        print(k * "-" + alp[n] + k * "-")
-        k-=1
+def print_rangoli(size): # 3
+    st = ""
+    w = 4 * size - 3 # 12 - 3 = 9
+    h = 2 * size - 1 #  6 - 1 = 5
+    a = w // 2
+    for i in range(h):
+        st += a * '-'  + alp[size] + a * '-' + '\n'
+    print(st)
         
 
-# print_rangoli(4)
-print_str(5)
+print_rangoli(3)
+# print_str(3)

@@ -1,1 +1,2 @@
-print(1 if input()[0]=='A' else 0)
+n = input()
+print(1 if int(n[-1])%2==1 else 0)

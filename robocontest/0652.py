@@ -1,0 +1,5 @@
+n = int(input())
+l = list(map(int, input().split()))
+k = format(sum(l)/n, '.10f')
+l = k.find('.')
+print(k[:l+10+1])

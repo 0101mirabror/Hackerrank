@@ -1,0 +1,5 @@
+n = int(input())
+a, b = list(map(int, input().split()))
+c, d = list(map(int, input().split()))
+# print(a, c, a|c)
+print(n - len(set(range(a, b+1))| set(range(c, d+1))))

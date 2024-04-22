@@ -11,3 +11,7 @@ Chiquvchi ma'lumotlar:
 Opa - singillar onalariga sovg‘ani ola olishsa “Yes” aks holda “No” so‘zini chiqaring.
 """
 
+n = int(input())
+a = list(map(int, input().split()))
+# print( 'Yes' if sum(a) > n else 'No'
+print({True: 'Yes', False: 'No'}[sum(a)>=n])
